@@ -29,25 +29,25 @@ python grok-backdoor.py
 
 #### Linux: 
 
-![alt text](https://github.com/deepzec/grok-backdoor/blob/new/screenshots/Create-backdoor-linux.PNG "Create backdoor binary")
+![alt text](https://github.com/deepzec/Grok-backdoor/blob/master/screenshots/Create-backdoor-linux.PNG "Create backdoor binary")
 
 #### Windows : 
 
-![alt text](https://github.com/deepzec/grok-backdoor/blob/new/screenshots/Create-backdoor-windows1.PNG "Create backdoor binary")
+![alt text](https://github.com/deepzec/Grok-backdoor/blob/master/screenshots/Create-backdoor-windows1.PNG "Create backdoor binary")
 
 You can find the output binary in grok-backdoor/dist/ directory:
 
-![alt text](https://github.com/deepzec/grok-backdoor/blob/new/screenshots/output-linux.PNG "Output")
+![alt text](https://github.com/deepzec/Grok-backdoor/blob/master/screenshots/output-linux.PNG "Output")
 
 
 Run grok-backdoor output binary in victim machine and login to Ngrok.com control panel to see the tunnel URL:
 
-![alt text](https://github.com/deepzec/grok-backdoor/blob/new/screenshots/ngrok.PNG "Ngrok Tunnel")
+![alt text](https://github.com/deepzec/Grok-backdoor/blob/master/screenshots/ngrok.PNG "Ngrok Tunnel")
 
 
 Telnet to tunnel URL to get the Bind shell: Enjoy shell :)
 
-![alt text](https://github.com/deepzec/grok-backdoor/blob/new/screenshots/telnet.PNG? "Shell")
+![alt text](https://github.com/deepzec/Grok-backdoor/blob/master/screenshots/telnet.PNG "Shell")
 
 
 ### Features:
