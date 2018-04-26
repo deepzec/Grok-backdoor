@@ -1,6 +1,12 @@
 # Grok-backdoor
 
-Grok-backdoor is a simple python based backdoor, it uses Ngrok tunnel for the communication and it make backdoor binary using Pyinstaller
+Grok-backdoor is a simple python based backdoor, it uses Ngrok tunnel for the communication. Ngrok-backdoor can generate windows, linux and mac binaries using Pyinstaller.
+
+## How it works:
+
+![alt text](https://github.com/deepzec/Grok-backdoor/blob/master/screenshots/ngrok.jpg "Create backdoor binary")
+
+
 
 
 ## Disclaimer: 
@@ -24,7 +30,7 @@ pip install -r requirements.txt
 
 You need to register an acccount in ngrok.com to use this backdoor, provide Ngrok authcode while configuring the grok-backdoor. You will see a new tcp tunnel created in Ngrok status panel after the grok-backdoor server execution in victim machine
 
-Create backdoor binary binary running : 
+Create backdoor binary by running : 
 
 python grok-backdoor.py
 
