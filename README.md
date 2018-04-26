@@ -3,8 +3,9 @@
 Grok-backdoor is a simple python based backdoor, it uses Ngrok tunnel for the communication and it make backdoor binary using Pyinstaller
 
 
-Disclaimer: This program is for educational purposes only.
-	I am not responsible for how you use this program
+## Disclaimer: 
+
+All the code provided on this repository is for educational/research purposes only. Any actions and/or activities related to the material contained within this repository is solely your responsibility. The misuse of the code in this repository can result in criminal charges brought against the persons in question. Author will not be held responsible in the event any criminal charges be brought against any individuals misusing the code in this repository to break the law. 
 	
 	
 ## Dependencies:
@@ -56,4 +57,8 @@ Telnet to tunnel URL to get the Bind shell: Enjoy shell :)
 * Autheticated bind shell
 
 * Ngrok tunnel for communication
+
+Note: I am not a professional python developer, so please excuse my poor coding style :) 
+
+Report bugs to twitter.com/deepzec 
 
