@@ -57,12 +57,21 @@ Telnet to tunnel URL to get the Bind shell: Enjoy shell :)
 ![alt text](https://github.com/deepzec/Grok-backdoor/blob/master/screenshots/telnet.PNG "Shell")
 
 
+### How to embed ngrok binary with the backdoor?
+
+choose No when grok-backdoor ask for "Do you want to download Ngrok binary during execution?". If you choose 'N' it will bind ngrok with the output backdoor binary
+
+### Proxy Blocking ngrok download attempt while backdoor execution?
+
+Choose bind ngrok binary with malware option to bypass proxy blocking.
+
+
 ### Features:
 * Multi platform support(windows,linux,Mac)
 
 * Autheticated bind shell
 
-* Ngrok tunnel for communication
+* Ngrok tunnel support to bypass firewall/proxy restrictions.
 
 Note: I am not a professional python developer, so please excuse my poor coding style :) 
 
