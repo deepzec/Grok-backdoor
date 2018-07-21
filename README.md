@@ -67,7 +67,7 @@ Choose bind ngrok binary with malware option to bypass proxy blocking.
 
 
 ### Features:
-* Multi platform support(windows,linux,Mac) - No cross compiling at the moment, you need to run this code in respective platforms to generate binaris for different platforms.
+* Multi platform support(windows,linux,Mac) - No cross compiling at the moment, you need to run this code in respective platforms to generate executables for different platforms.
 
 * Autheticated bind shell
 
