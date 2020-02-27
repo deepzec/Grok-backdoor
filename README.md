@@ -4,7 +4,12 @@ Grok-backdoor is a simple python based backdoor, it uses Ngrok tunnel for the co
 
 ## How it works:
 
+Ngrok exposes local servers behind NATs and firewalls to the public internet over secure tunnels.
+
 ![alt text](https://github.com/deepzec/Grok-backdoor/blob/master/screenshots/ngrok.jpg "Create backdoor binary")
+
+
+Ngrok connect our malware local listerner port to ngrok cloud service which accepts traffic on a public address and relays that traffic through to the ngrok process(our listner) running on your machine and then on to the local address you specified.
 
 
 
