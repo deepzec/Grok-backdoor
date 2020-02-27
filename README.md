@@ -33,7 +33,7 @@ pip install -r requirements.txt
 
 ### Usage: 
 
-You need to register an acccount in ngrok.com to use this backdoor, provide Ngrok authcode while configuring the grok-backdoor. You will see a new tcp tunnel created in Ngrok status panel after the grok-backdoor server execution in victim machine
+You need to register an ngrok.com acccount to use this backdoor, provide Ngrok authcode while configuring the grok-backdoor. You will see a new tcp tunnel created in Ngrok status panel after the grok-backdoor server execution on victim machine
 
 Create backdoor binary by running : 
 
@@ -73,12 +73,9 @@ Choose bind ngrok binary with malware option to bypass proxy blocking.
 
 ### Features:
 * Multi platform support(windows,linux,Mac) - No cross compiling at the moment, you need to run this code in respective platforms to generate executables for different platforms.
-
 * Autheticated bind shell
-
+* Random output binary
 * Ngrok tunnel support to bypass firewall/proxy restrictions.
-
-Note: I am not a professional python developer, so please excuse my poor coding style :) 
 
 Report bugs to twitter.com/deepzec & Pull request are always welcome :)
 
