@@ -10,7 +10,10 @@ import random
 import os
 import subprocess
 import time
-
+"""
+Grok-backdoor.
+Author : Deepu TV - twitter.com/deepzec 
+"""
 
 ostype = systemos().lower()
 cfgfile = 'conf.ini'
@@ -167,11 +170,40 @@ if __name__ == "__main__":
         else:
             checkNgrok()
             if ostype =='windows':
+                
+                print ("""================================================================================
+           ___           _           ___            _       _                  
+          / _ \_ __ ___ | | __      / __\ __ _  ___| | ____| | ___   ___  _ __ 
+         / /_\/ '__/ _ \| |/ /____ /__\/// _` |/ __| |/ / _` |/ _ \ / _ \| '__|
+        / /_\\| | | (_) |   <_____/ \/  \ (_| | (__|   < (_| | (_) | (_) | |   
+        \____/|_|  \___/|_|\_\    \_____/\__,_|\___|_|\_\__,_|\___/ \___/|_|
+
+        Report bugs to Deepu TV - twitter.com/deepzec""" )
+                
                 option = raw_input("\nSelect an option:\n\n[1]Create a windows backdoor\n\n[4]C2 manager\n\n  Option >  ".format(CYAN, END))
+                
 
             elif ostype == 'linux':
+
+                print ("""================================================================================
+           ___           _           ___            _       _                  
+          / _ \_ __ ___ | | __      / __\ __ _  ___| | ____| | ___   ___  _ __ 
+         / /_\/ '__/ _ \| |/ /____ /__\/// _` |/ __| |/ / _` |/ _ \ / _ \| '__|
+        / /_\\| | | (_) |   <_____/ \/  \ (_| | (__|   < (_| | (_) | (_) | |   
+        \____/|_|  \___/|_|\_\    \_____/\__,_|\___|_|\_\__,_|\___/ \___/|_|
+
+        Report bugs to Deepu TV - twitter.com/deepzec""" )
                 option = raw_input("\nSelect an option:\n\n[2]Create a Linux backdoor\n\n[43]C2 manager\n\n  Option >  ".format(CYAN, END))
             elif ostype == 'darwin':
+
+                print ("""================================================================================
+           ___           _           ___            _       _                  
+          / _ \_ __ ___ | | __      / __\ __ _  ___| | ____| | ___   ___  _ __ 
+         / /_\/ '__/ _ \| |/ /____ /__\/// _` |/ __| |/ / _` |/ _ \ / _ \| '__|
+        / /_\\| | | (_) |   <_____/ \/  \ (_| | (__|   < (_| | (_) | (_) | |   
+        \____/|_|  \___/|_|\_\    \_____/\__,_|\___|_|\_\__,_|\___/ \___/|_|
+
+        Report bugs to Deepu TV - twitter.com/deepzec""" )
                 option = raw_input("\nSelect an option:\n\n[3]Create a Mac backdoor\n\n[4]C2 manager\n\n  Option >  ".format(CYAN, END))
 
 #            option = raw_input("\nSelect an option:\n\n[1]Create a windows backdoor\n\n[2]Create a Linux backdoor\n\n[3]C2 manager\n\n  SF >  ".format(CYAN, END))
