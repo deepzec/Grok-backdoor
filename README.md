@@ -33,7 +33,7 @@ pip install -r requirements.txt
 
 ### Usage: 
 
-You need to register an ngrok.com acccount to use this backdoor, provide Ngrok authcode while configuring the grok-backdoor. You will see a new tcp tunnel created in Ngrok status panel after the grok-backdoor server execution on victim machine
+You need a ngrok.com acccount to use this backdoor, provide Ngrok authcode while configuring the grok-backdoor. You will see a new tcp tunnel created in Ngrok status panel after the grok-backdoor server execution on victim machine
 
 Create backdoor binary by running : 
 
