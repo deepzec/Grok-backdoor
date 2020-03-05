@@ -87,7 +87,7 @@ def pybinary(option):
     if os.path.isfile('.\dist\server.exe'):
         file = ".\dist\server.exe"
     else:
-        file = ".\dist\server"
+        file = "./dist/server"
     BLOCK_SIZE = 65536
     file_hash = hashlib.sha256()
     with open(file, 'rb') as f:
