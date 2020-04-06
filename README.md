@@ -1,6 +1,6 @@
 # Grok-backdoor
 
-Grok-backdoor is a simple python based backdoor, it uses Ngrok tunnel for the communication. Ngrok-backdoor can generate windows, linux and mac binaries using Pyinstaller.
+Grok-backdoor is a simple python based backdoor, it uses Ngrok tunnel for the communication. Ngrok-backdoor can generate Windows, Linux and Mac binaries using Pyinstaller.
 
 ## How it works:
 
