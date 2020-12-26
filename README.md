@@ -1,15 +1,15 @@
 # Grok-backdoor
 
-Grok-backdoor is a simple python based backdoor, it uses Ngrok tunnel for the communication. Ngrok-backdoor can generate Windows, Linux and Mac binaries using Pyinstaller.
+Grok-backdoor is a simple python based backdoor, it uses Ngrok tunnel for the C&C communication. Ngrok-backdoor can generate Windows, Linux and Mac binaries using Pyinstaller.
 
 ## How it works:
 
-Ngrok exposes local servers behind NATs and firewalls to the public internet over secure tunnels.
+Ngrok exposes local servers behind NATs and firewalls to the public internet over a secure tunnel.
 
 ![alt text](https://github.com/deepzec/Grok-backdoor/blob/master/screenshots/ngrok.jpg "Create backdoor binary")
 
 
-Ngrok connect our malware local listerner port to ngrok cloud service which accepts traffic on a public address and relays that traffic through to the ngrok process(our listner) running on your machine and then on to the local address you specified.
+Ngrok establishes a tunnel between malware local listerner port and ngrok server public IP over a unique port number. Attacker can connect Ngrok public IP and unique port to intract with internal malware listerner. 
 
 
 
@@ -33,7 +33,7 @@ pip install -r requirements.txt
 
 ### Usage: 
 
-You need a ngrok.com acccount to use this backdoor, provide Ngrok authcode while configuring the grok-backdoor. You will see a new tcp tunnel created in Ngrok status panel after the grok-backdoor server execution on victim machine
+You need a ngrok.com acccount to use this backdoor, you can provide Ngrok authcode while configuring the grok-backdoor. You will be able to see a new tcp tunnel created in Ngrok status panel after the grok-backdoor server execution on victim machine
 
 Create backdoor binary by running : 
 
