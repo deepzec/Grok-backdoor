@@ -9,7 +9,7 @@ Ngrok exposes local servers behind NATs and firewalls to the public internet ove
 ![alt text](https://github.com/deepzec/Grok-backdoor/blob/master/screenshots/ngrok.jpg "Create backdoor binary")
 
 
-Ngrok establishes a tunnel between malware local listerner port and ngrok server public IP over a unique port number. Attacker can connect Ngrok public IP and unique port to intract with internal malware listerner. 
+Ngrok establishes a tunnel between malware local listener port and ngrok server public IP over a unique port number. Attacker can connect Ngrok public IP and unique port to intract with internal malware listener. 
 
 
 
