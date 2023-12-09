@@ -1,2 +1,2 @@
 wget==3.2
-pyinstaller==3.2.1
+pyinstaller==5.13.1
